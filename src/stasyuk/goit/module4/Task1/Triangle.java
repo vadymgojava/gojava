@@ -1,10 +1,11 @@
-package stasyuk.goit.module4.Task1;
+package stasyuk.goit.module4.task1;
 
 public class Triangle {
-    public static void main(String[] args) {
-        Figure figure = new Figure();
-        double p = ((figure.getKat1() + figure.getKat2() + figure.getGyp()) / 2);
-        double area = Math.sqrt(p * (p - figure.getKat1()) * (p - figure.getKat2()) * (p - figure.getGyp()));
-        System.out.println(area);
+    public static double calcAreaTriangle(double kat1, double kat2, double gyp) {
+        double p;
+        p = ((kat1 + kat2 + gyp) / 2);
+        double area;
+        area = Math.sqrt(p * (p - kat1) * (p - kat2) * (p -gyp));
+        return area;
     }
 }

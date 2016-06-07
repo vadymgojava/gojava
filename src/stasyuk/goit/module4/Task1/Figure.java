@@ -1,4 +1,4 @@
-package stasyuk.goit.module4.Task1;
+package stasyuk.goit.module4.task1;
 
 public class Figure {
     private double sideA;

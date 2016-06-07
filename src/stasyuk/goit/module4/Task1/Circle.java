@@ -1,10 +1,10 @@
-package stasyuk.goit.module4.Task1;
+package stasyuk.goit.module4.task1;
 
 public class Circle {
-    public static void main(String[] args) {
-        Figure figure = new Figure();
-        double area = Math.PI * figure.getRadius() * figure.getRadius();
-        System.out.println(area);
+    public static double calcAreaCircle (double radius) {
+        double area;
+        area = Math.PI * radius * radius;
+        return area;
 
     }
 

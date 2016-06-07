@@ -1,9 +1,9 @@
-package stasyuk.goit.module4.Task1;
+package stasyuk.goit.module4.task1;
 
 public class Rectangle {
-    public static void main(String[] args) {
-        Figure figure = new Figure();
-        double area = (figure.getSideA()*figure.getSideB());
-        System.out.println(area);
+    public static double calcAreaRectangle (double sideA, double sideB) {
+        double area;
+        area = (sideA*sideB);
+        return area;
     }
 }

@@ -1,13 +1,16 @@
-package stasyuk.goit.module4.Task2;
+package stasyuk.goit.module4.task2;
 
-class Temperature {
-    public static void main(String[] args) {
+public class Temperature {
+    public static double convertToFahrenheit (double celsius) {
         double fahrenheit;
-        double celsius;
         fahrenheit = celsius*9/5 + 32.0;
-        celsius = (fahrenheit - 32.0)*5/9;
-        System.out.println(fahrenheit);
-        System.out.println(celsius);
+        return fahrenheit;
         }
+    public static double converToCelsius (double fahrenheit) {
+        double celsius;
+        celsius = (fahrenheit - 32.0)*5/9;
+        return celsius;
     }
+
+}
 
