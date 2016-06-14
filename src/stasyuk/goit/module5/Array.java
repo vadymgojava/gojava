@@ -3,7 +3,7 @@ package stasyuk.goit.module5;
 import java.util.Arrays;
 
 public class Array {
-    public int MinValue(int[] intNumbers) {
+    public static int minValue(int[] intNumbers) {
 
         Arrays.sort(intNumbers);
         int minValue = intNumbers[0];
@@ -11,7 +11,7 @@ public class Array {
 
     }
 
-    public int MaxValue(int[] intNumbers) {
+    public static int maxValue(int[] intNumbers) {
 
         Arrays.sort(intNumbers);
         int maxValue = intNumbers[intNumbers.length - 1];
@@ -21,8 +21,8 @@ public class Array {
     public static void main(String[] args) {
         Array array  = new Array();
         int [] intNumbers = new int[]{2, 2, 23, 23, 34, 1, -10};
-        int maxValue  = array.MaxValue(intNumbers);
-        int minValue  = array.MinValue(intNumbers);
+        int maxValue  = array.maxValue(intNumbers);
+        int minValue  = array.minValue(intNumbers);
         for (int element1: intNumbers) {
             System.out.println(element1);
 

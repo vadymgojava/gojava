@@ -3,7 +3,7 @@ package stasyuk.goit.module4.task1;
 public class Figure {
     private double sideA;
     private double sideB;
-    private double radius;
+    private double radius = 2;
     private double Kat1;
     private double Kat2;
     private double Gyp;

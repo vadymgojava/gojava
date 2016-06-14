@@ -1,5 +1,8 @@
 # folder
 .idea/*
 .out/*
-# file
+# class
+
+*.class
+
 GoJava.iml

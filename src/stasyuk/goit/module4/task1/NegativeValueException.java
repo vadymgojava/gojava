@@ -1,7 +1,14 @@
 package stasyuk.goit.module4.task1;
 
-/**
- * Created by V@D on 12.06.2016.
- */
-public class NegativeValueException {
+
+public class NegativeValueException extends IllegalStateException {
+    private double areaValue;
+
+    public NegativeValueException(double areaValue) {
+        this.areaValue = areaValue;
+    }
+
+    public double getAreaValue() {
+        return areaValue;
+    }
 }

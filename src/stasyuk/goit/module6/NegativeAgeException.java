@@ -1,7 +1,15 @@
 package stasyuk.goit.module6;
 
-/**
- * Created by V@D on 11.06.2016.
- */
-public class NegativeAgeException {
+
+public class NegativeAgeException extends Exception {
+    private int ageValue;
+
+    public NegativeAgeException(int ageValue) {
+        this.ageValue = ageValue;
+    }
+
+    public int getAgeValue() {
+        return ageValue;
+    }
 }
+
