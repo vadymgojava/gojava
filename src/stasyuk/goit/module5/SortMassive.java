@@ -2,11 +2,12 @@ package stasyuk.goit.module5;
 
 // метод bubble sort
 
-import java.util.List;
 
 public class SortMassive {
 
-    public int [] sort (int[] intArray) {
+    public static int [] sort (int[] intArray) {
+
+        if (intArray.length==1) throw new IllegalStateException("There is nothing to sort, sorry");
 
         boolean switchOccurred = true;
 
@@ -14,6 +15,7 @@ public class SortMassive {
         while (switchOccurred) {
             switchOccurred = false;
             for (int i = 0; i < intArray.length - 1; i++) {
+
                 if (intArray[i] < intArray[i + 1]) {
 
                     int tempInteger = intArray[i];
@@ -27,14 +29,8 @@ public class SortMassive {
         return intArray;
 
     }
-//  ЭТО МЕТОД ЧИСТО ДЛЯ ПРОВЕРКИ
-    public static void main(String[] args) {
-        SortMassive sortMassive = new SortMassive();
-        int[] intArray = new int[]{2, 32, 12, 1, -12};
-        for (int element : sortMassive.sort(intArray)) {
-            System.out.println(element);
-        }
 
 
-    }
+
+
 }

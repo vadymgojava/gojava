@@ -1,5 +1,5 @@
 package stasyuk.goit.module3.Diagramm3;
 
-class Piano extends MusicalInstrument {
+class Piano extends Instrument {
 
 }

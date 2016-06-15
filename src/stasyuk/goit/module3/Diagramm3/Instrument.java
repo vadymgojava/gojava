@@ -1,5 +1,6 @@
 package stasyuk.goit.module3.Diagramm3;
 
-class MusicalInstrument {
 
-}
+abstract class Instrument {
+
+    }
